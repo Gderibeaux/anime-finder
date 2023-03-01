@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import AnimeView from "../src/AnimeView/AnimeView"
+import Anime from "../src/Anime/Anime"
+import { Route } from "react-router-dom"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>TOP ANIMES</h1>
+      {/* <Switch> */}
+        {/* <Route path="/" element={<AnimeView />} /> */}
+        {/* <Route exact path="/genres" element={<AnimeGenre/>} /> */}
+        <AnimeView />
+        {/* <Route exact path="/:animeID" element={<Anime/>} /> */} 
+         {/* <Route path="/favorites" element={<Favorites />} />
+        <Route path="*" element={<Error />}/> */}
+    {/* </Switch> */}
     </div>
   );
 }

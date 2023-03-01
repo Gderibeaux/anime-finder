@@ -1,0 +1,13 @@
+.anime-card {
+    width: 18em;
+    min-width: 15em;
+    min-height: 21em;
+    margin: 2em;
+    aspect-ratio: 1/1;
+    box-shadow: 10px 5px 10px rgba(0.5);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+   
+  
+}
