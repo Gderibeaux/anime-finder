@@ -1,9 +1,9 @@
 // import './AnimeGenre.css'
 // import React from 'react'
 // import { getAnime } from '../Utilities/ApiCalls'
-// // import AnimeCard from '../AnimeCard/AnimeCard'
+// import AnimeCard from '../AnimeCard/AnimeCard'
 // import { useState, useEffect } from 'react';
-// // // import AlbumTile from '../AlbumTile/AlbumTile'
+
 
 // function AnimeGenre() {
 //     const [genre, setData] = useState([]);
@@ -25,9 +25,9 @@
 //     return (
 //       <div className="anime-genre">
 //         {/* {(loading) && <p>Loading...</p>} */}
-//         {(anime) && anime.map((anime, index) => {
+//         {(genre) && genre.map((genre, index) => {
 //             return (
-//                 <AnimeCard anime={anime} key={index} />
+//                 // <AnimeCard genre={genre} key={index} />
 //             )
 //         })}
 
