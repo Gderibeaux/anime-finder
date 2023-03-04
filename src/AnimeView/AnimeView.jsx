@@ -26,15 +26,20 @@ function AnimeView() {
     return (
       <div className="anime-view">
         {/* {(loading) && <p>Loading...</p>} */}
+        <h1>Help {console.log('we got this', animes)}</h1>
         {(animes) && animes.map((anime, index) => {
             return (
               <div>
+              <div>
                 <AnimeCard anime={anime} key={index} />
-                {/* <AnimeGenre /> */}
+              </div>
+
               </div>
             )
         })}
-
+          <div>
+            <AnimeGenre />
+          </div>
       </div>
     )
   }

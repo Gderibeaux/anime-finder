@@ -36,7 +36,7 @@ function Dropdown() {
         <option value="completed">Completed</option>
         <option value="planToWatch">Plan to Watch</option>
       </select>
-      <button onClick={handleAddMovie}>Add Movie</button>
+      <button onClick={handleAddMovie}>Add</button>
     </div>
   );
 }

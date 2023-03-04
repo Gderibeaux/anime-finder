@@ -4,6 +4,8 @@ import Anime from "../src/Anime/Anime"
 import { Switch, Route } from "react-router-dom"
 import AnimeStatus from './AnimeStatus/AnimeStatus';
 import Error from "../src/Error/Error"
+import AnimeGenre from "../src/AnimeGenre/AnimeGenre"
+import Action from "../src/Action/Action"
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
 render={({match}) => {
   return <Anime animeID={match.params.animeID}/>}}
   />
+        <Route exact path="/genre/action" render={()=> <Action/>} />
         {/* <Route exact path="/:animeID" component={Anime} />
         <Route exact path="/:animeID/status" component={AnimeStatus} /> */}
         <Route path="*" element={<Error />}/>
