@@ -1,15 +1,12 @@
-
 import React from 'react'
-// import { getAnime } from '../Utilities/ApiCalls'
 import AnimeCard from '../AnimeCard/AnimeCard'
 import { useState, useEffect } from 'react';
-import AnimeGenre from '../AnimeGenre/AnimeGenre'
 
 
-function Action() {
+
+function Horror() {
     const [animes, setData] = useState([]);
-    const [filterGenre, setFilteredGenre] = useState([])
-    const [filteredAnimes, setFilteredAnimes] = useState([]);
+
     
 
     useEffect(() => {
@@ -24,11 +21,11 @@ function Action() {
 
  
     const filteredData = animes.filter(obj => {
-        return obj.genres.some(genre => genre.name === 'Action');
+        return obj.genres.some(genre => genre.name === 'Horror');
       });
       
         return (
-            <div className='action-view'>
+            <div className='horror-view'>
                 <h1>List of Items {console.log('Figure it out', filteredData)}</h1>
                {(animes) && filteredData.map((anime, index) => {
                 return (
@@ -42,7 +39,4 @@ function Action() {
 }
 
   
-  export default Action
-
-
-
+  export default Horror

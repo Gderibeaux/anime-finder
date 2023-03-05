@@ -4,7 +4,9 @@ import React from 'react'
 import AnimeCard from '../AnimeCard/AnimeCard'
 import { useState, useEffect } from 'react';
 import AnimeGenre from '../AnimeGenre/AnimeGenre'
-
+import { Link } from 'react-router-dom'
+import RandomAnimeButton from '../GetRandom/GetRandom'
+import Header from "../Header/Header"
 
 function AnimeView() {
     const [animes, setData] = useState([]);
@@ -24,9 +26,10 @@ function AnimeView() {
     
  
     return (
+      <div className="home-view">
+      
       <div className="anime-view">
         {/* {(loading) && <p>Loading...</p>} */}
-        <h1>Help {console.log('we got this', animes)}</h1>
         {(animes) && animes.map((anime, index) => {
             return (
               <div>
@@ -37,9 +40,15 @@ function AnimeView() {
               </div>
             )
         })}
-          <div>
+          <div className="side-bar">
+            <RandomAnimeButton />
             <AnimeGenre />
           </div>
+          <Link to="/status">
+            <button>Go TO Status</button>
+          </Link>
+          
+      </div>
       </div>
     )
   }

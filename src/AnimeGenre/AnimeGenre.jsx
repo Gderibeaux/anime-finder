@@ -25,16 +25,30 @@ function AnimeGenre() {
  
     return (
       <div className="anime-genre">
-        {/* {(loading) && <p>Loading...</p>}
-        {(genres) && genres.map((genre, index) => {
-            return (
-                genre.mal_id
-            )
-        })} */}
-            <p>Action</p>
-            <p>Adventure</p>
+            <h3>Choose A Genre</h3>
             <Link to="/genre/action">
-              <button >GO to action</button>
+              <button >ACTION</button>
+            </Link>
+            <Link to="/genre/adventure">
+              <button >ADVENTURE</button>
+            </Link>
+            <Link to="/genre/comedy">
+              <button >Comedy</button>
+            </Link>
+            <Link to="/genre/romance">
+              <button >Romance</button>
+            </Link>
+            <Link to="/genre/fantasy">
+              <button >Fantasy</button>
+            </Link>
+            <Link to="/genre/horror">
+              <button >Horror</button>
+            </Link>
+            <Link to="/genre/mystery">
+              <button >Mystery</button>
+            </Link>
+            <Link to="/genre/sports">
+              <button >Sports</button>
             </Link>
       </div>
     )
