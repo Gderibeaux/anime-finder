@@ -1,7 +1,7 @@
 .anime-view {
     position: absolute;
     top: 0;
-    left: 220px; /* adjust the value to create space for the sidebar */
+    left: 220px; 
     right: 0;
     bottom: 0;
     display: flex;
@@ -23,7 +23,7 @@
     top: 100px;
     left: 0;
     bottom: 0;
-    width: 200px; /* change the width as needed */
+    width: 200px; 
     background-color: #f2f2f2;
     padding: 20px;
   }

@@ -2,6 +2,7 @@
 import React from 'react'
 import AnimeCard from '../AnimeCard/AnimeCard'
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'
 
 
 
@@ -26,8 +27,8 @@ function Action() {
       });
       
         return (
-            <div className='action-view'>
-                <h1>List of Items {console.log('Figure it out', filteredData)}</h1>
+          <div>
+            <div className='anime-view'>
                {(animes) && filteredData.map((anime, index) => {
                 return (
                <div> 
@@ -35,7 +36,11 @@ function Action() {
                </div>
                 )
                })}
+            <Link to="/">
+              <button>GO BACK HOME</button>
+            </Link>
             </div>
+          </div>
         );
 }
 

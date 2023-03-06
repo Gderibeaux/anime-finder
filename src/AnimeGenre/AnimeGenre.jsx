@@ -1,28 +1,9 @@
 import './AnimeGenre.css'
 import React from 'react'
-import { getAnime } from '../Utilities/ApiCalls'
-import AnimeGenreCard  from '../AnimeGenreCard/AnimeGenreCard'
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 
 
 function AnimeGenre() {
-    const [genres, setData] = useState([]);
-
-    // useEffect(() => {
-    //   console.log('Fetching data...');
-  
-    //   fetch('https://api.jikan.moe/v4/genres/anime')
-    //     .then(response => response.json())
-    //     .then(data => {
-    //       console.log('GENRE data:', data);
-    //       setData(data);
-    //     })
-    //     .catch(error => console.log(error));
-    // }, []);
-
-    
- 
     return (
       <div className="anime-genre">
             <h3>Choose A Genre</h3>

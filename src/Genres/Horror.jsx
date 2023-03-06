@@ -1,6 +1,7 @@
 import React from 'react'
 import AnimeCard from '../AnimeCard/AnimeCard'
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'
 
 
 
@@ -24,18 +25,22 @@ function Horror() {
         return obj.genres.some(genre => genre.name === 'Horror');
       });
       
-        return (
-            <div className='horror-view'>
-                <h1>List of Items {console.log('Figure it out', filteredData)}</h1>
-               {(animes) && filteredData.map((anime, index) => {
-                return (
-               <div> 
-                <AnimeCard anime={anime} key={index} />
-               </div>
-                )
-               })}
-            </div>
-        );
+      return (
+        <div>
+          <div className='anime-view'>
+             {(animes) && filteredData.map((anime, index) => {
+              return (
+             <div> 
+              <AnimeCard anime={anime} key={index} />
+             </div>
+              )
+             })}
+          <Link to="/">
+            <button>GO BACK HOME</button>
+          </Link>
+          </div>
+        </div>
+      );
 }
 
   
