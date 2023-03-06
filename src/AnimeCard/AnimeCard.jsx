@@ -1,8 +1,9 @@
 import './AnimeCard.css'
 import { Link } from 'react-router-dom'
+import PropTypes from "prop-types";
 
 const AnimeCard = ({anime}) => {
-    console.log(anime)
+    // console.log(anime)
     return (
       <div className="anime-card">
         <Link to={{

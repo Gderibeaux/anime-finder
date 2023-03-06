@@ -1,38 +1,38 @@
-// import './AnimeGenre.css'
-// import React from 'react'
-// import { getAnime } from '../Utilities/ApiCalls'
-// // import AnimeCard from '../AnimeCard/AnimeCard'
-// import { useState, useEffect } from 'react';
-// // // import AlbumTile from '../AlbumTile/AlbumTile'
+import './AnimeGenre.css'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-// function AnimeGenre() {
-//     const [genre, setData] = useState([]);
 
-//     useEffect(() => {
-//       console.log('Fetching data...');
+function AnimeGenre() {
+    return (
+      <div className="anime-genre">
+            <h3>Choose A Genre</h3>
+            <Link to="/genre/action">
+              <button >ACTION</button>
+            </Link>
+            <Link to="/genre/adventure">
+              <button >ADVENTURE</button>
+            </Link>
+            <Link to="/genre/comedy">
+              <button >Comedy</button>
+            </Link>
+            <Link to="/genre/romance">
+              <button >Romance</button>
+            </Link>
+            <Link to="/genre/fantasy">
+              <button >Fantasy</button>
+            </Link>
+            <Link to="/genre/horror">
+              <button >Horror</button>
+            </Link>
+            <Link to="/genre/mystery">
+              <button >Mystery</button>
+            </Link>
+            <Link to="/genre/sports">
+              <button >Sports</button>
+            </Link>
+      </div>
+    )
+  }
   
-//       fetch('https://api.jikan.moe/v4/genres/anime')
-//         .then(response => response.json())
-//         .then(json => {
-//           console.log('Fetched data:', json.data);
-//           setData(json.data);
-//         })
-//         .catch(error => console.log(error));
-//     }, []);
-
-    
- 
-//     return (
-//       <div className="anime-genre">
-//         {/* {(loading) && <p>Loading...</p>} */}
-//         {(anime) && anime.map((anime, index) => {
-//             return (
-//                 <AnimeCard anime={anime} key={index} />
-//             )
-//         })}
-
-//       </div>
-//     )
-//   }
-  
-//   export default AnimeGenre
+  export default AnimeGenre
